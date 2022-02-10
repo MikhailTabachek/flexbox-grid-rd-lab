@@ -115,7 +115,7 @@ justify-content:center;
 
   main {
     grid-template-columns: 20% 20% 60%;
-    grid-template-rows: 5% 10% 10% 10% 30% 10% ;
+    grid-template-rows: 7% 18% 12% 13% 30% 20% ;
   }
 
   #status {
@@ -150,10 +150,10 @@ justify-content:center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display:flex;
       margin: 0;
-      padding-top: 10px;
+      padding-top: 5px;
       padding-bottom: 10px;
       justify-content: start;
-      align-items: center;
+      /* align-items: center; */
       padding-left: 25px;
       background-color: rgb(231, 231, 223);
     }
@@ -164,7 +164,27 @@ justify-content:center;
       grid-row-start: 5;
       background-color: rgb(231, 231, 223);
       padding-left: 25px;
+      padding-right: 15px;
 
+    }
+
+    #offer {
+      grid-column: 3;
+      grid-row: 6;
+      margin: 0;
+    }
+
+    #offer > p {
+      display: flex;
+      justify-content: start;
+      padding-left: 25px;
+      padding-top: 3px;
+      padding-bottom: 4px;
+      margin: 0;
+      background-color: rgb(231, 231, 223);
+
+      
+    
     }
 
 }
