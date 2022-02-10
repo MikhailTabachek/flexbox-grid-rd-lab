@@ -114,32 +114,39 @@ justify-content:center;
   }
 
   main {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 5% 40% 10% 20% 20% 10% ;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 5% 10% 10% 10% 30% 10% ;
   }
 
   #status {
-    color: rgb(107, 106, 106);
-    display:flex;
     grid-column-end: 2;
     justify-content: start;
     padding-left: 3%;
     }
 
     img {
-      display: flex;
+      margin-left: 45%;
       grid-column-end: 2;
-      align-self: center;
-      margin-top: 5px;
-      border-radius: 50%;
-      border-color: rgb(43, 192, 100);
-      border-style: solid;
+    }
+
+    #name {
+      grid-column-start: 3;
+      justify-content:start;
+      padding-left: 25px;
+    }
+
+    #occupation{
+      
+      background-color: rgb(231, 231, 223);
+      grid-column: 3 / 4;
+  
+    }
+
+    #brand {
+      display: flex;
+      grid-column: 3 / 4;
+      grid-row-start: 5;
+
     }
 
 }
