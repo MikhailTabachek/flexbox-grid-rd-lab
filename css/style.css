@@ -20,21 +20,6 @@ body {
   display: grid;
   grid-template-columns: auto 300px auto;
   grid-template-rows: 33% 50% auto;
-  grid-template-areas: 
-    "status status"
-    "img img"
-    "h1"
-    "occupation"
-    "stars"
-    "Psychic Healer"
-    "brand"
-    "description"
-    "offer"
-    "free"
-    "rate"
-    "contact"
-    "phone logo"
-    "message logo";
 
 }
 
@@ -68,7 +53,6 @@ img {
   /* align-items: center; */
   margin-top: 5px;
   margin-left: 28%;
-  margin-right: 15vh;
   border-radius: 50%;
   border-color: rgb(43, 192, 100);
   border-style: solid;
@@ -122,3 +106,40 @@ justify-content:center;
 
 }
 
+@media only screen and (min-width: 768px) {
+
+  body {
+    grid-template-columns: auto 600px auto;
+    grid-template-rows: 33% 50% auto;
+  }
+
+  main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 5% 40% 10% 20% 20% 10% ;
+  }
+
+  #status {
+    color: rgb(107, 106, 106);
+    display:flex;
+    grid-column-end: 2;
+    justify-content: start;
+    padding-left: 3%;
+    }
+
+    img {
+      display: flex;
+      grid-column-end: 2;
+      align-self: center;
+      margin-top: 5px;
+      border-radius: 50%;
+      border-color: rgb(43, 192, 100);
+      border-style: solid;
+    }
+
+}
